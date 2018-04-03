@@ -58,5 +58,6 @@ goals = [];
   removeItem(i){
     this.goals.splice(i, 1);
     this._data.changeGoal(this.goals);
+    this.itemCount = this.goals.length;
   }
 }
